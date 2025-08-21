@@ -10,7 +10,17 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-Real Estate Blocks is a powerful and modern WordPress Block Theme.
+Real Estate Blocks is a powerful and modern WordPress Block Theme crafted specifically for real estate agencies, realtors, property managers, and property listing websites. Built with Full Site Editing (FSE) at its core, this theme gives you complete visual control over every part of your website—no coding required.
+
+It includes a variety of pre-designed block patterns, making it easy to build professional sections for FAQs, featured property listings, and more. All colors, typography, and layouts can be customized directly in the Site Editor.
+
+The theme is fully responsive, retina-ready, and optimized for fast loading across all screen sizes—delivering a smooth and consistent experience on mobile, tablet, and desktop. Real Estate Blocks is compatible with Gutenberg and other popular page builders, giving you the freedom to design your site with your preferred tools.
+
+When paired with the optional (and free) Real-Estate-Right-Now plugin, you unlock powerful property management features. Agents and agencies gain full control over their listings, with support for unlimited custom fields, property types, image galleries, and more. Advanced search filters offer a tailored experience for users to quickly find the properties they’re looking for.
+
+Whether you’re an independent realtor or part of a larger brokerage, Real Estate Blocks offers seamless Full Site Editing support, lightweight and SEO-optimized code, ready-to-use block patterns, and translation-ready support. Get your real estate agency website online in minutes—with flexibility, performance, and style.
+
+For live demos, detailed documentation, video, support and more information, visit our official website: https://RealEstatePlugin.eu
 
 = 1.1.10 - 2025-08-20 =
 * Small Improvements.

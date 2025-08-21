@@ -1,4 +1,4 @@
-= real-estate-blocks 
+# Real Estate Blocks
 
 If you need a classic theme, try our free Real Estate Right Now theme. link: https://github.com/sminozzi/real-estate
 

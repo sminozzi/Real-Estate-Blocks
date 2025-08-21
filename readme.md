@@ -1,6 +1,6 @@
 == real-estate-blocks ==
 
-If you need a classic theme, try our free Real Estate Right Now theme.
+If you need a classic theme, try our free Real Estate Right Now theme. link: https://github.com/sminozzi/real-estate
 
 Contributors: sminozzi
 Author URI: https://billminozzi.com/

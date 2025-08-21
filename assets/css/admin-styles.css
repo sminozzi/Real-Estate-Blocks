@@ -1,0 +1,111 @@
+/*
+ * Styles for the Real Estate Blocks theme dashboard page.
+ */
+
+/* General Styles */
+h3 {
+  color: #0546ae;
+}
+
+/* Main Container */
+#real-estate-blocks-logo {
+  margin-top: 10px;
+  padding-top: 0px;
+  margin-left: -7px;
+}
+
+/* 3 Steps Section */
+#real-estate-blocks-steps3 {
+  margin-top: 20px;
+  min-height: 430px;
+  /* Adjusted based on content */
+  max-width: 100%;
+  border: 1px solid gray;
+  border-radius: 5px;
+  background: white;
+  margin-bottom: 15px;
+  margin-right: 15px;
+  overflow: hidden;
+  /* To contain children */
+}
+
+/* Services and Help Section */
+#real-estate-blocks-services3 {
+  margin-top: 15px;
+  min-height: 330px;
+  /* Adjusted based on content */
+  max-width: 100%;
+  border: 1px solid gray;
+  border-radius: 5px;
+  background: white;
+  margin-right: 15px;
+  overflow: hidden;
+  /* To contain children */
+}
+
+/* Shared Block Title Style */
+.real-estate-blocks-block-title {
+  font-size: 30px;
+  max-width: 100% !important;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+  background-color: #5b9dd9;
+  color: white;
+}
+
+/* Flex Container for Columns */
+.real-estate-blocks-help-container1 {
+  display: flex;
+  font-size: 14px;
+}
+
+/* Individual Columns */
+.real-estate-blocks-help-column {
+  flex: 1;
+  padding: 25px;
+  box-sizing: border-box;
+  text-align: left;
+  max-width: 33.33%;
+  /* Using percentage for better flex behavior */
+  overflow: hidden;
+  font-size: 16px;
+}
+
+.real-estate-blocks-help-column-1 {
+  order: 1;
+}
+
+.real-estate-blocks-help-column-2 {
+  order: 2;
+}
+
+.real-estate-blocks-help-column-3 {
+  order: 3;
+}
+
+/* Primary Button Style */
+.button-primary {
+  margin-top: 5px !important;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1100px) {
+  #real-estate-blocks-logo img {
+    /* More specific selector */
+    max-width: 200px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .real-estate-blocks-help-container1 {
+    display: block;
+    /* Stacks columns */
+  }
+
+  .real-estate-blocks-help-column {
+    max-width: 100% !important;
+    /* Allow columns to take full width */
+    min-width: 100%;
+  }
+}

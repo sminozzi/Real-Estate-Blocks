@@ -1,0 +1,335 @@
+/*
+Theme Name: Real Estate Blocks
+Theme URI: https://realestatetheme.eu/real-estate-blocks/
+Author: sminozzi
+Author URI: https://billminozzi.com/
+Description: Real Estate Blocks is a powerful and modern WordPress Block Theme crafted specifically for real estate agencies, realtors, property managers, and property listing websites. Built with Full Site Editing (FSE) at its core, this theme gives you complete visual control over every part of your website—no coding required. It includes a variety of pre-designed block patterns, making it easy to build professional sections for FAQs, featured property listings, and more. All colors, typography, and layouts can be customized directly in the Site Editor. The theme is fully responsive, retina-ready, and optimized for fast loading across all screen sizes—delivering a smooth and consistent experience on mobile, tablet, and desktop. Real Estate Blocks is compatible with Gutenberg and other popular page builders, giving you the freedom to design your site with your preferred tools. When paired with the optional (and free) Real-Estate-Right-Now plugin, you unlock powerful property management features. Agents and agencies gain full control over their listings, with support for unlimited custom fields, property types, image galleries, and more. Advanced search filters offer a tailored experience for users to quickly find the properties they’re looking for. Whether you're an independent realtor or part of a larger brokerage, Real Estate Blocks offers seamless Full Site Editing support, lightweight and SEO-optimized code, ready-to-use block patterns, and translation-ready support. Get your real estate agency website online in minutes—with flexibility, performance, and style. For live demos, detailed documentation, video, support and more information, visit our official website: https://RealEstatePlugin.eu
+Version: 1.10
+Requires at least: 6.4
+Tested up to: 6.8
+Requires PHP: 7.4
+License: GPL v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: real-estate-blocks
+Tags: full-site-editing, block-patterns, translation-ready, e-commerce, portfolio, blog, custom-background, custom-logo, editor-style, one-column, wide-blocks
+*/
+
+/* --- Header Styles --- */
+
+/*-- 1.1 Top Bar --*/
+.real-estate-top-bar {
+  background: var(--wp--preset--color--topbar);
+  padding: 5px var(--wp--preset--spacing--40);
+  color: var(--wp--preset--color--base);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-bar-contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 25px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.contact-item p {
+  margin: 0;
+  padding: 0;
+}
+
+/*-- 1.2 Main Header Area --*/
+.wp-block-column .real-estate-block-container-logo {
+  background-color: var(--wp--preset--color--backmenu);
+  min-height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+/* This creates the angled divider effect */
+.wp-block-column .real-estate-block-container-logo::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 100%;
+  width: 10px;
+  background-color: white;
+  /* You may want to change this to your page background color */
+  transform: skewX(-15deg);
+  transform-origin: left;
+  z-index: -1;
+}
+
+.wp-block-column .real-estate-block-container-menu {
+  background-color: var(--wp--preset--color--backmenu);
+  min-height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+
+/*-- 1.3 Navigation & Submenu --*/
+.wp-block-column .real-estate-block-container-menu .wp-block-navigation-item>a {
+  color: var(--wp--preset--color--colormenu);
+  text-decoration: none;
+}
+
+.wp-block-column .real-estate-block-container-menu .wp-block-navigation-item>a:hover {
+  text-decoration: underline;
+}
+
+.wp-block-navigation__submenu-icon svg {
+  stroke: var(--wp--preset--color--base);
+}
+
+.wp-block-navigation .wp-block-navigation-item .wp-block-navigation__submenu-container {
+  background-color: var(--wp--preset--color--backmenu);
+  padding: 10px;
+  border-top: 33px solid var(--wp--preset--color--topbar);
+  min-width: 200px;
+}
+
+.wp-block-navigation .wp-block-navigation-item .wp-block-navigation__submenu-container .wp-block-navigation-item__link {
+  color: var(--wp--preset--color--colormenu);
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+.wp-block-navigation .wp-block-navigation-item .wp-block-navigation__submenu-container .wp-block-navigation-item__link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  text-decoration: none;
+}
+
+.wp-block-navigation .wp-block-navigation-item.has-child>.wp-block-navigation-item__link {
+  padding-right: 10px;
+}
+
+/* --- Footer Styles --- */
+
+.real-estate-blockfooter {
+  padding: 10px;
+}
+
+.real-estate-blockfooter h2.wp-block-heading.real-estate-blockfooter-heading {
+  color: var(--wp--preset--color--colormenu);
+  font-size: 18px;
+}
+
+.real-estate-blockfooter .real-estate-blockfooter-copy a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+/* --- General Block Styles --- */
+
+.wp-block-calendar table:where(:not(.has-text-color)) th {
+  background-color: var(--wp--preset--color--contrast);
+  color: var(--wp--preset--color--base);
+  border-color: var(--wp--preset--color--contrast);
+}
+
+.wp-block-calendar table:where(:not(.has-text-color)) td {
+  border-color: var(--wp--preset--color--contrast);
+}
+
+.wp-block-categories {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.wp-block-categories li {
+  margin-bottom: 0.5rem;
+}
+
+.wp-block-post-terms .wp-block-post-terms__prefix {
+  color: var(--wp--preset--color--contrast);
+}
+
+.wp-block-loginout input,
+.wp-block-post-comments-form textarea,
+.wp-block-post-comments-form input,
+.wp-block-search .wp-block-search__input {
+  border-radius: 0.33rem;
+}
+
+.wp-block-loginout input {
+  padding: calc(0.667em + 2px);
+  border: 1px solid #949494;
+}
+
+.wp-block-query-title span {
+  font-style: italic;
+}
+
+.wp-block-quote :where(p) {
+  margin-block-start: 0;
+  margin-block-end: calc(var(--wp--preset--spacing--10) + 0.5rem);
+}
+
+.wp-block-quote :where(:last-child) {
+  margin-block-end: 0;
+}
+
+.wp-block-quote.has-text-align-right.is-style-plain,
+.rtl .is-style-plain.wp-block-quote:not(.has-text-align-center):not(.has-text-align-left) {
+  border-width: 0 2px 0 0;
+  padding-left: calc(var(--wp--preset--spacing--20) + 0.5rem);
+  padding-right: calc(var(--wp--preset--spacing--20) + 0.5rem);
+}
+
+.wp-block-quote.has-text-align-left.is-style-plain,
+body:not(.rtl) .is-style-plain.wp-block-quote:not(.has-text-align-center):not(.has-text-align-right) {
+  border-width: 0 0 0 2px;
+  padding-left: calc(var(--wp--preset--spacing--20) + 0.5rem);
+  padding-right: calc(var(--wp--preset--spacing--20) + 0.5rem);
+}
+
+.wp-block-separator:not(.is-style-wide):not(.is-style-dots):not(.alignwide):not(.alignfull) {
+  width: var(--wp--preset--spacing--60);
+}
+
+.wp-block-image.size-full img {
+  width: 100%;
+  height: auto;
+}
+
+
+/* --- Focus Styles & Accessibility --- */
+
+:where(*:focus-visible) {
+  outline: 2px solid var(--wp--preset--color--contrast, #0073aa);
+  outline-offset: 2px;
+}
+
+:where(*:focus):not(:focus-visible) {
+  outline: none;
+}
+
+.real-estate-block-container-menu .wp-block-navigation-item>a:focus-visible,
+.real-estate-block-container-menu .wp-block-navigation .wp-block-navigation-item .wp-block-navigation__submenu-container .wp-block-navigation-item__link:focus-visible,
+.real-estate-block-container-menu .wp-block-navigation-submenu__toggle:focus-visible {
+  outline: 2px solid var(--wp--preset--color--base, #ffffff);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.real-estate-block-container-menu .wp-block-navigation-submenu .wp-block-navigation__submenu__toggle:focus-visible svg {
+  stroke: var(--wp--preset--color--base, #ffffff) !important;
+  fill: var(--wp--preset--color--base, #ffffff) !important;
+}
+
+.wp-block-social-links .wp-block-social-link-anchor:focus-visible {
+  outline: 2px solid var(--wp--preset--color--base, #ffffff);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.wp-block-social-links .wp-block-social-link-anchor:focus-visible svg {
+  stroke: var(--wp--preset--color--base, #ffffff) !important;
+  fill: var(--wp--preset--color--base, #ffffff) !important;
+}
+
+/* --- Responsive Styles --- */
+
+@media (max-width: 900px) {
+  .real-estate-top-bar {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .wp-block-column.real-estate-block-container-logo,
+  .wp-block-column.real-estate-block-container-menu {
+    min-height: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .wp-block-column .real-estate-block-container-logo::after {
+    display: none;
+    /* Hides the angled divider on mobile */
+  }
+
+  .wp-block-column.real-estate-block-container-menu .wp-block-navigation {
+    margin: auto;
+  }
+
+  html.has-modal-open .wp-site-blocks::before {
+    background-color: transparent;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .wp-block-navigation__responsive-dialog {
+    background-color: var(--wp--preset--color--backmenu);
+    padding: 10px;
+  }
+
+  .wp-block-navigation__responsive-dialog .wp-block-navigation__responsive-container-close svg {
+    fill: var(--wp--preset--color--colormenu);
+  }
+
+  .wp-block-navigation__responsive-container-open svg {
+    fill: var(--wp--preset--color--colormenu);
+  }
+
+  .wp-block-navigation__responsive-dialog .wp-block-navigation-item a {
+    color: var(--wp--preset--color--colormenu);
+    font-size: 1.5rem;
+  }
+}
+
+/*
+ * Fix for vertical alignment in the top bar.
+ * This ensures the icons are perfectly centered with the text next to them.
+*/
+.real-estate-top-bar .contact-item img {
+  vertical-align: middle;
+}
+
+/* This removes the default top/bottom margin from paragraphs, allowing flexbox to center them correctly. */
+.real-estate-top-bar .contact-item p {
+  margin: 0;
+}
+
+/* --- Footer Styles Overrides --- */
+
+/* Ensures links in the copyright line inherit the footer's text color (white). */
+.real-estate-block-footer .real-estate-block-footer-copy a {
+  color: inherit;
+}
+
+/* Optional: Adds a simple underline on hover for better user experience. */
+.real-estate-block-footer .real-estate-block-footer-copy a:hover {
+  text-decoration: underline;
+}
+
+.wp-block-group .wp-block-columns .wp-block-column[style*="flex-basis:32px"] .wp-block-image {
+  background-color: #808080;
+  /* Cor cinza para o fundo do ícone */
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.wp-block-group .wp-block-columns .wp-block-column[style*="flex-basis:32px"] .wp-block-image img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}

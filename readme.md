@@ -1,5 +1,7 @@
 == real-estate-blocks ==
 
+If you need a classic theme, try our free Real Estate Right Now theme.
+
 Contributors: sminozzi
 Author URI: https://billminozzi.com/
 Requires at least: 6.4
